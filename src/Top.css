@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-left:10px ;
+}
+.top{
+    display: flex;
+    gap: 2rem;
+    margin-top: 4px;
+}
+a{
+    text-decoration: none;
+}
+.hamburger {
+    /* border: 1px solid white; */
+}
+.logout{
+    border: 1px solid white;
+    width: 100px;
+}
+.lock{
+    border: 1px solid white;
+    width: 100px;
+}
