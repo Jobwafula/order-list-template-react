@@ -6,11 +6,16 @@ margin-top: 1rem;
 width: 100%;
     
 }
-.thcontainer{
+.tablecontainer{
     background-color: rgba(255, 255, 255, 0.251);
 color: white;
 border-radius: 5px;
 }
 th{
     padding: 0 0.7rem;
+}
+td{
+    padding: 0 0.7rem;
+    align-items: center;
+    text-align: center;
 }

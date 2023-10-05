@@ -2,10 +2,37 @@ import React from 'react'
 import "./Table.css"
 
 export default function Table() {
+    const data = [{
+        id:1,
+        item:2,
+        cost:2,
+        discount:2,
+        total_paid:4,
+        payment_method:"cash",
+        staff:'staff',
+        order_type:"type",
+        client:"client",
+        transaction_date:"date",
+        actions:"actions"
+
+    },
+    {
+        id:2,
+        item:2,
+        cost:2,
+        discount:2,
+        total_paid:4,
+        payment_method:"cash",
+        staff:'staff',
+        order_type:"type",
+        client:"client",
+        transaction_date:"date",
+        actions:"actions"
+
+    }]
   return (
     <div>
-        <table>
-            <div className='thcontainer'>
+        <table className='tablecontainer'>
                 <tr>
                     <th>ID NO</th>
                     <th>ITEM(S)</th>
@@ -19,12 +46,28 @@ export default function Table() {
                     <th>TRANSACTION DATE</th>
                     <th>ACTIONS</th>
                 </tr>
-                </div>
+                
 
             <tbody>
-                <tr>
-                    <td></td>
+                {data.map((item,key)=>{
+                    return(
+                        <tr key={item.id}>
+
+                    <td>{item.id}</td>
+                    <td>{item.item}</td>
+                    <td>{item.cost}</td>
+                    <td>{item.id}</td>
+                    <td>{item.total_paid}</td>
+                    <td>{item.payment_method}</td>
+                    <td>{item.staff}</td>
+                    <td>{item.order_type}</td>
+                    <td>{item.client}</td>
+                    <td>{item.transaction_date}</td>
+                    <td>{item.actions}</td>
                 </tr>
+                    )
+                })}
+                
             </tbody>
         </table>
     </div>

@@ -2,8 +2,8 @@ import React from 'react'
 import './Top.css'
 import { Link } from '@mui/material'
 import {GiHamburgerMenu} from 'react-icons/gi'
-import {AiFillLock}
-
+import {IoIosLogOut} from 'react-icons/io'
+import {AiFillLock} from 'react-icons/ai'
 export default function Top() {
   const linkStyles = {
     textDecoration: "none",
@@ -15,8 +15,8 @@ export default function Top() {
     <div className='container'>
       <div className='top'>
         <div className='hamburger'><GiHamburgerMenu size={30} /></div>
-        <Link style={linkStyles}>Logout</Link>
-        <Link style={linkStyles}>Lock</Link>
+        <Link style={linkStyles}> <IoIosLogOut />Logout</Link>
+        <Link style={linkStyles}> <AiFillLock  />Lock</Link>
         
       </div>
       <div>
